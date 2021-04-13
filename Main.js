@@ -15,7 +15,7 @@ function doGet(e) {
 }
 
 function setRule(range, ruleList) {
-var rule = SpreadsheetApp.newDataValidation().requireValueInList(ruleList).build();
-range.setDataValidation(rule);
-range.setValue(ruleList[0]);
+    var rule = SpreadsheetApp.newDataValidation().requireValueInList(ruleList).build();
+    range.setDataValidation(rule);
+    range.setValue(ruleList[0]);
 }
